@@ -11,6 +11,8 @@ jtag:
 jtag:
 	$(OFL) $(OFLFLAGS) -c dirtyJtag $(TOP)\_00.cfg
 ```
+## Usage
+Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/workspace/_, then inside the directories, you can issue the usual commands e.g _make all_
 
 
 
