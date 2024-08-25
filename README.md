@@ -19,6 +19,5 @@ Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/wo
 ![Generic 8 red leds](/images/8leds.webp)
 
 **A 8-leds module connected to PMOD interface**
-![Pmod leds 8 leds bottom](/images/PMOD_LEDx8_bot.jpg)
-![Pmod leds 8 leds top](/images/PMOD_LEDx8_top.jpg)
+![Pmod leds 8 leds top and bottom](/images/PMOD_LEDx8.jpg)
 
