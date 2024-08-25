@@ -11,6 +11,9 @@ jtag:
 jtag:
 	$(OFL) $(OFLFLAGS) -c dirtyJtag $(TOP)\_00.cfg
 ```
+## Note
+Unfortunatelly I purchased by accident the version without the U3 spi flash chip, so the reset is a real reset: I have to upload again the binary to the board. Maybe it is worth to select the product with more care, 3 euros is worth it :)
+
 ## Usage
 Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/workspace/_, then inside the directories, you can issue the usual commands e.g _make all_
 
