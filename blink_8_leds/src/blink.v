@@ -24,7 +24,6 @@ module blink(
 
 	reg [27:0] counter;
     reg [7:0] sum = 8'b11111111;
-    reg [7:0] ossz = 0;
 
 	wire clk270, clk180, clk90, clk0, usr_ref_out;
 	wire usr_pll_lock_stdy, usr_pll_lock;
@@ -71,8 +70,7 @@ module blink(
 		end
 
         if ( &counter[22:0] ) begin
-            ossz <= ossz + 1;
-            sum <= ~ossz;
+            sum <= sum - 1;
         end
 	end
 
