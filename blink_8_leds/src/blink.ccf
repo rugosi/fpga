@@ -77,3 +77,15 @@ Net   "pmod_led5"   Loc = "IO_EA_B5";
 Net   "pmod_led6"   Loc = "IO_EA_A5"; 
 Net   "pmod_led7"   Loc = "IO_EA_B4"; 
 Net   "pmod_led8"   Loc = "IO_EA_A4"; 
+
+Net   "rgb_led0"   Loc = "IO_NB_A0"; 
+Net   "rgb_led1"   Loc = "IO_NB_A1"; 
+Net   "rgb_led2"   Loc = "IO_NB_A2"; 
+Net   "rgb_led3"   Loc = "IO_NB_A3"; 
+Net   "rgb_led4"   Loc = "IO_NB_A4"; 
+Net   "rgb_led5"   Loc = "IO_NB_A5"; 
+Net   "rgb_led6"   Loc = "IO_NB_A6"; 
+Net   "rgb_led7"   Loc = "IO_NB_A7"; 
+Net   "rgb_r"      Loc = "IO_NB_B0";
+Net   "rgb_b"      Loc = "IO_NB_B1";
+Net   "rgb_g"      Loc = "IO_NB_B2";

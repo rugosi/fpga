@@ -24,3 +24,5 @@ Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/wo
 **A 8-leds module connected to PMOD interface**
 ![Pmod leds 8 leds top and bottom](/images/PMOD_LEDx8.jpg)
 
+**A 8-leds rgb module connected to BANK_NB1 interface**
+![Rgb 8 leds and schema](/images/rgbleds_with_schema.webp)

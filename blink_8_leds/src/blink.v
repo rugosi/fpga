@@ -12,6 +12,7 @@ module blink(
 		output wire led5,
 		output wire led6,
 		output wire led7,
+
 		output wire pmod_led1,
 		output wire pmod_led2,
 		output wire pmod_led3,
@@ -19,11 +20,25 @@ module blink(
 		output wire pmod_led5,
 		output wire pmod_led6,
 		output wire pmod_led7,
-		output wire pmod_led8
+		output wire pmod_led8,
+
+		output wire rgb_led0,
+		output wire rgb_led1,
+		output wire rgb_led2,
+		output wire rgb_led3,
+		output wire rgb_led4,
+		output wire rgb_led5,
+		output wire rgb_led6,
+		output wire rgb_led7,
+
+		output wire rgb_r,
+		output wire rgb_b,
+		output wire rgb_g
 	);
 
 	reg [27:0] counter;
     reg [7:0] sum = 8'b11111111;
+    reg [1:0] color = 2'b00;
 
 	wire clk270, clk180, clk90, clk0, usr_ref_out;
 	wire usr_pll_lock_stdy, usr_pll_lock;
@@ -61,6 +76,20 @@ module blink(
 	assign pmod_led7 = sum[6];
 	assign pmod_led8 = sum[7];
 
+    assign rgb_r = color == 2'd1 || color == 2'd0 ? 0 : 1;
+    assign rgb_g = color == 2'd2 || color == 2'd0 ? 0 : 1;
+    assign rgb_b = color == 2'd3 || color == 2'd0 ? 0 : 1;
+
+	assign rgb_led0 = sum[0]; 
+	assign rgb_led1 = sum[1]; 
+	assign rgb_led2 = sum[2];
+	assign rgb_led3 = sum[3];
+	assign rgb_led4 = sum[4];
+	assign rgb_led5 = sum[5];
+	assign rgb_led6 = sum[6];
+	assign rgb_led7 = sum[7];
+
+
 	always @(posedge clk0)
 	begin
 		if (!rst) begin
@@ -72,6 +101,13 @@ module blink(
         if ( &counter[22:0] ) begin
             sum <= sum - 1;
         end
+
+        if ( &counter[22:0] ) begin
+            if ( sum == 0 ) begin
+                color <= color + 1'b1;
+            end
+        end
+
 	end
 
 endmodule
