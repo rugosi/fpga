@@ -29,3 +29,6 @@ Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/wo
 **A 8-leds rgb module connected to BANK_NB1 interface**
 
 ![Rgb 8 leds and schema](/images/rgbleds_with_schema.webp)
+
+## Risc-V learning
+Based on https://github.com/fm4dd/gatemate-riscv which is based on https://github.com/BrunoLevy/learn-fpga/tree/master/FemtoRV/TUTORIALS/FROM_BLINKER_TO_RISCV.
