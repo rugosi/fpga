@@ -18,6 +18,8 @@ Unfortunatelly I purchased by accident the version without the U3 spi flash chip
 Put the directories inside your toolchain directory, e.g. _cc-toolchain-linux/workspace/_, then inside the directories, you can issue the usual commands e.g _make all_
 
 ## 8 leds blinking while counting
+https://youtu.be/1Av---T-x8s
+
 **A 8-leds with red leds connected to BANK_NA1**
 
 ![Generic 8 red leds](/images/8leds.webp)
